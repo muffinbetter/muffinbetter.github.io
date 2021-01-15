@@ -200,14 +200,28 @@
       <!-- Footer -->
       <footer id="footer">
         <div class="inner">
-          <section>
-            <h2>Get in touch</h2>
+			
+          <section> 
+			<h2>Get in touch</h2>
+			<form action="assets/feedback_form.php" method="post">
+
+				<label>Email Address</label>
+				<input type="text" name="email_address" size="40">
+				<br>
+				<label>Your Feedback</label>
+				<textarea name="feedback" cols="50" rows="10"></textarea>
+				<br>
+				<input type="submit" name="send" value="Submit">
+				
+				</form>
+
+            <!-- <h2>Get in touch</h2>
             <form method="post" action="assets/form.php">
               <div class="fields">
-                <!-- <div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div> -->
                 <div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>  -->
+                <!-- <div class="field half">
                   <input
                     type="email"
                     name="email"
@@ -226,7 +240,7 @@
               <ul class="actions">
                 <li><input type="submit" value="Send" class="primary" /></li>
               </ul>
-            </form>
+            </form>-->
           </section>
           <!-- <section>
 								<h2>Follow</h2>
